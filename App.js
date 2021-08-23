@@ -60,15 +60,15 @@ const App = () => {
                   />
                 </View>
                 <View style={styles.textbox}>
-                  <Text style={styles.listTile}>{item.title}</Text>
+                  <Text style={styles.listTitle}>{item.title}</Text>
                   <Text>{item.description}</Text>
                 </View>
               </TouchableOpacity>
             );
           }}
         />
-        <StatusBar style="auto" />
       </View>
+      <StatusBar style="auto" />
     </SafeAreaView>
   );
 };
@@ -76,7 +76,6 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
-    justifyContent: 'center',
   },
   droidSafeArea: {
     flex: 1,
