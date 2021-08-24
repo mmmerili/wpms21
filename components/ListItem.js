@@ -4,13 +4,13 @@ import {Image, Text, TouchableOpacity, View, StyleSheet} from 'react-native';
 import {uploadsUrl} from '../utils/variables';
 
 const ListItem = ({singleMedia}) => {
-  console.log(singleMedia);
+  console.log('singleMedia', singleMedia);
   return (
     <TouchableOpacity style={styles.row}>
       <View style={styles.imagebox}>
         <Image
           style={styles.image}
-          source={{uri: uploadsUrl + singleMedia.filename}}
+          source={{uri: uploadsUrl + singleMedia.thumbnails?.w160}}
         />
       </View>
       <View style={styles.textbox}>
