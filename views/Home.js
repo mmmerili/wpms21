@@ -9,11 +9,11 @@ import {
 } from 'react-native';
 import List from '../components/List';
 
-const Home = (props) => {
+const Home = ({navigation}) => {
   return (
     <SafeAreaView style={styles.droidSafeArea}>
       <View style={styles.container}>
-        <List />
+        <List navigation={navigation} />
       </View>
       <StatusBar style="auto" />
     </SafeAreaView>
@@ -31,6 +31,8 @@ const styles = StyleSheet.create({
   },
 });
 
-Home.propTypes = {};
+Home.propTypes = {
+  navigation: PropTypes.object.isRequired,
+};
 
 export default Home;
