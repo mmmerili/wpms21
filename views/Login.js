@@ -5,7 +5,7 @@ import {MainContext} from '../contexts/MainContext';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Login = ({navigation}) => {
-  const [isLoggedIn, setIsLoggedIn] = useContext(MainContext);
+  const {setIsLoggedIn} = useContext(MainContext);
   // console.log('Login isLoggedIn', isLoggedIn);
 
   const logIn = async () => {
