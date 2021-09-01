@@ -68,7 +68,12 @@ const useUser = () => {
       console.log('checkToken error', error);
     }
   };
-  return {checkToken};
+
+  const register = async (token) => {
+    // https://media.mw.metropolia.fi/wbma/docs/#api-User-PostUser
+  };
+
+  return {checkToken, register};
 };
 
 export {useMedia, useLogin, useUser};
